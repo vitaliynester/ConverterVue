@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HomeComponent name="Форма быстрого перевода из одной единицы измерения в другую" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HomeComponent from "@/components/HomeComponent";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HomeComponent,
   }
 }
 </script>
