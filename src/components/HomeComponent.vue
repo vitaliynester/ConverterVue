@@ -37,28 +37,28 @@ export default {
   methods: {
     // Метод для перевода Футов в Метры
     convertFtToM: (value) => {
-      if (typeof(value) == 'number') {
+      if (isNaN(value)) {
         return 0;
       }
       return value / 3.281;
     },
     // Метод для перевода морских миль в километры
     convertNmToKm: (value) => {
-      if (typeof(value) == 'number') {
+      if (isNaN(value)) {
         return 0;
       }
       return value / 1.852;
     },
     // Метод для перевода градусов в радианы
     convertDegreeToRadians: (value) => {
-      if (typeof(value) == 'number') {
+      if (isNaN(value)) {
         return 0;
       }
       return value * (Math.PI / 180);
     },
     // Метод для перевода температура по Цельсию в температуру по Фаренгейту
     convertCelsiusToFahrenheit: (value) => {
-      if (typeof(value) == 'number') {
+      if (isNaN(value)) {
         return 0;
       }
       return (value * 9/5) + 32;
